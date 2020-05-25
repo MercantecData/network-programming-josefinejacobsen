@@ -10,11 +10,10 @@ namespace EncodingTest
             string text = "jeg håber du er glad";
             byte[] bytes = Encoding.ASCII.GetBytes(text);
 
-            foreach(byte b in bytes)
-            {
-                Console.WriteLine(b);
-            }
+          
             
+            text = Encoding.ASCII.GetString(bytes);
+            Console.WriteLine(text);
         }
     }
 }
